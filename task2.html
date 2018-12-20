@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		.otzivi {
+			min-height: 315px;
+			background: url(bg.png) 50% 50% no-repeat;
+			background-size: cover;
+			text-align: center;
+		}
+		.otzivi .title {
+			margin: 0;
+			text-transform:uppercase;
+			font-size: 40px;
+			font-weight: 400;
+			color: #3170a8;
+			text-align: center;
+			padding: 45px;
+		}
+		.otzivi .title a{
+			text-decoration: none;
+		}
+		.otzivi .title span {
+			color: #ee8129;
+		}
+		.otziv {
+			width: 500px;
+			min-height: 100px;
+			margin: 20px;
+			display: inline-block;
+		}
+		.otziv .text {
+			padding:15px;
+			box-sizing: border-box;
+			position: relative;
+			background-color: #FFF;
+			min-height: 96px;
+			width: 378px;	
+			display: inline-block;
+			font-size: 17px;
+			font-weight: bold;
+			vertical-align: top;
+		    opacity: 0.85;
+		}
+		.otziv .text:before {
+			position: absolute;
+			left: -30px;
+			top: 33px;
+			border: 15px solid;
+			border-color: transparent #fff transparent transparent;
+			content: '';
+
+		}
+		.otziv .img {
+			margin-right: 16px;
+			width: 102px;
+			height: 96px;
+			overflow: hidden;
+		    display: inline-block;
+    		position: relative;
+    		border-radius: 50%;
+    		transition: border-radius 1s;
+		}
+		.otziv:hover .img{
+			border-radius: 5px;
+		}
+		.otziv .img img{
+			width: 102px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.otziv .h3 {
+			color:#3070a8;
+			margin: 0;
+			font-style: italic;
+			padding-bottom: 10px;
+			height: 1em;
+			border-bottom: 1px dotted #a9a9a9; 
+		}
+		.otziv .name {
+			float: left;
+		}
+		.otziv .name:before {
+			content: '- ';
+		}
+		.otziv .customer {
+			float: right;
+		}
+		.otziv p {
+			margin: 0;
+			padding-top: 10px;
+			font-weight: normal;
+			text-align: left;
+			color: #666666;
+		}
+	</style>
+</head>
+<body>
+	<div class="otzivi">
+		<h2 class="title"><a href="https://youtu.be/jofNR_WkoCE?t=39" target="_blank"> What does the <span>Fox</span> say</a></h2>
+		<div class="otziv">
+			<div class="img"><img src="fox1.jpg" alt="teytya"></div>
+			<div class="text">
+				<div class="h3"><span class="name">Staciya Trollio</span><span class="customer">Customer</span></div>
+				<p>Ring-ding-ding-ding-dingeringeding!</p>
+			</div>
+		</div>	
+		<div class="otziv">
+			<div class="img"><img src="fox2.jpg" alt="Dyadya"></div>
+			<div class="text">
+				<div class="h3"><span class="name">David Soul</span><span class="customer">Customer</span></div>
+				<p>Gering-ding-ding-ding-dingeringeding!</p>
+			</div>
+		</div>	
+		<div class="otziv">
+			<div class="img"><img src="fox3.jpg" alt="Dyadya"></div>
+			<div class="text">
+				<div class="h3"><span class="name">David Soul</span><span class="customer">Customer</span></div>
+				<p>Wa-pa-pa-pa-pa-pa-pow!</p>
+			</div>
+		</div>	
+		<div class="otziv">
+			<div class="img"><img src="fox4.jpg" alt="teytya"></div>
+			<div class="text">
+				<div class="h3"><span class="name">Staciya Trollio</span><span class="customer">Customer</span></div>
+				<p>Wa-pa-pa-pa-pa-pa-pow!</p>
+			</div>
+		</div>			
+	</div>
+</body>
+</html>
